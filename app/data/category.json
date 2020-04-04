@@ -1,0 +1,47 @@
+[
+    {
+        "class": 1,
+        "label": "Infantry"
+    },
+    {
+        "class": 8,
+        "label": "Cavalry"
+    },
+    {
+        "class": 11,
+        "label": "All Building (except Dock)"
+    },
+    {
+        "class": 15,
+        "label": "Archer"
+    },
+    {
+        "class": 17,
+        "label": "Rams"
+    },
+    {
+        "class": 19,
+        "label": "Unique Unit"
+    },
+    {
+        "class": 21,
+        "label": "Standard Building"
+    },
+    {
+        "class": 23,
+        "label": "Poudre"
+    },
+    {
+        "class": 27,
+        "label": "spearmen"
+    },
+    {
+        "class": 28,
+        "label": "CavalyArcher"
+    }
+    ,
+    {
+        "class": 29,
+        "label": "Eagle Warrior"
+    }
+]
