@@ -36,6 +36,10 @@
         "label": "Unique Unit"
     },
     {
+        "class": 20,
+        "label": "Siege Weapons"
+    },
+    {
         "class": 21,
         "label": "Standard Building"
     },

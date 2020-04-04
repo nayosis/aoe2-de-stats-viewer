@@ -355,4 +355,292 @@
             }
         ]
     }
+    ,
+    {
+        "id": 4,
+        "name": "Archer",
+        "stats": {
+            "life": 30,
+            "speed": 0.96,
+            "lineSigth": 6,
+            "minRange": 4,
+            "maxRange": 6,
+            "attack": {
+                "type": "pierce",
+                "amount": 4
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            15
+        ],
+        "bonus": [
+            
+            {
+                "amount": 0,
+                "category": 13
+            },
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 3,
+                "category": 27
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Elite Skirmisher",
+        "stats": {
+            "life": 35,
+            "speed": 0.96,
+            "lineSigth": 7,
+            "minRange": 1,
+            "maxRange": 5,
+            "attack": {
+                "type": "pierce",
+                "amount": 3
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 4
+                }
+            ]
+        },
+        "categories": [
+            15
+        ],
+        "bonus": [
+            
+            {
+                "amount": 4,
+                "category": 15
+            },
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 3,
+                "category": 27
+            },
+            {
+                "amount": 2,
+                "category": 28
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Skirmisher",
+        "stats": {
+            "life": 30,
+            "speed": 0.96,
+            "lineSigth": 6,
+            "minRange": 1,
+            "maxRange": 4,
+            "attack": {
+                "type": "pierce",
+                "amount": 2
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 3
+                }
+            ]
+        },
+        "categories": [
+            15
+        ],
+        "bonus": [
+            
+            {
+                "amount": 3,
+                "category": 15
+            },
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 3,
+                "category": 27
+            }
+        ]
+    }
+    ,
+    {
+        "id": 8,
+        "name": "Longbowman",
+        "stats": {
+            "life": 35,
+            "speed": 0.96,
+            "lineSigth": 7,
+            "minRange": 0,
+            "maxRange": 5,
+            "attack": {
+                "type": "pierce",
+                "amount": 6
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            15,
+            19
+        ],
+        "bonus": [
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 2,
+                "category": 27
+            }
+        ]
+    }
+    ,
+    {
+        "id": 11,
+        "name": "Mangudai",
+        "stats": {
+            "life": 60,
+            "speed": 1.45,
+            "lineSigth": 6,
+            "minRange": 0,
+            "maxRange": 4,
+            "attack": {
+                "type": "pierce",
+                "amount": 6
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            8,
+            15,
+            19,
+            28
+        ],
+        "bonus": [
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 3,
+                "category": 20
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 1,
+                "category": 27
+            }
+        ]
+    }
+    
+    ,
+    {
+        "id": 24,
+        "name": "Crossbowman",
+        "stats": {
+            "life": 35,
+            "speed": 0.96,
+            "lineSigth": 7,
+            "minRange": 0,
+            "maxRange": 5,
+            "attack": {
+                "type": "pierce",
+                "amount": 5
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            15
+        ],
+        "bonus": [
+            {
+                "amount": 0,
+                "category": 13
+            },
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 3,
+                "category": 27
+            }
+        ]
+    }
 ]
