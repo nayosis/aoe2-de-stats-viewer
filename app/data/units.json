@@ -3,6 +3,11 @@
         "id": 41,
         "name": "Huskarl",
         "stats": {
+            "life" : 60,
+            "speed":1.05,
+            "lineSigth":3,
+            "minRange":0,
+            "maxRange":0,
             "attack": {
                 "type": "melee",
                 "amount": 10
@@ -42,6 +47,11 @@
         "id": 5,
         "name": "Hand Cannoneer",
         "stats": {
+            "life" : 35,
+            "speed":0.96,
+            "lineSigth":9,
+            "minRange":0,
+            "maxRange":7,
             "attack": {
                 "type": "pierce",
                 "amount": 17
@@ -86,6 +96,11 @@
         "id": 763,
         "name": "Plumed Archer",
         "stats": {
+            "life" : 50,
+            "speed":1.2,
+            "lineSigth":6,
+            "minRange":0,
+            "maxRange":4,
             "attack": {
                 "type": "pierce",
                 "amount": 5
@@ -122,6 +137,89 @@
             {
                 "amount": 0,
                 "category": 17
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Teutonic Knight",
+        "stats": {
+            "life" : 80,
+            "speed":0.7,
+            "lineSigth":3,
+            "minRange":0,
+            "maxRange":0,
+            "attack": {
+                "type": "melee",
+                "amount": 12
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 5
+                },
+                {
+                    "type": "pierce",
+                    "amount": 3
+                }
+            ]
+               
+        },
+        "categories": [
+            1,
+            19
+        ],
+        "bonus": [
+            {
+                "amount": 4,
+                "category": 29
+            },
+            {
+                "amount": 4,
+                "category": 21
+            }
+        ]
+    },
+    {
+        "id": 569,
+        "name": "Paladin",
+        "stats": {
+            "life" : 160,
+            "speed":1.35,
+            "lineSigth":5,
+            "minRange":0,
+            "maxRange":0,
+            "attack": {
+                "type": "melee",
+                "amount": 14
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 2
+                },
+                {
+                    "type": "pierce",
+                    "amount": 3
+                }
+            ]
+               
+        },
+        "categories": [
+            8
+        ],
+        "bonus": [
+            {
+                "amount": 0,
+                "category": 15
+            },
+            {
+                "amount": 0,
+                "category": 11
+            },
+            {
+                "amount": 0,
+                "category": 21
             }
         ]
     }

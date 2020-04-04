@@ -9,6 +9,8 @@ import {
 import { Layout, Menu } from 'antd';
 import ListUnitWrapper from "./pages/listUnitWrapper";
 
+import UnitWrapper from "./pages/unitWrapper"
+
 
 
 
@@ -32,7 +34,7 @@ const App = () => {
         <div>
             <Router>
                 <Layout>
-                    <Header>
+                    <Header  >
                         <div className="logo" />
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
                             <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
@@ -42,14 +44,14 @@ const App = () => {
                     </Header>
                     <Layout>
 
-                        <Content>
+                        <Content style={{ height: '75vh' }}>
 
                             <Switch>
                                 <Route path="/about">
                                     <About />
                                 </Route>
-                                <Route path="/users">
-                                    <Users />
+                                <Route path="/units/:idUnit">
+                                    <UnitWrapper />
                                 </Route>
                                 <Route path="/units">
                                     <ListUnitWrapper />
@@ -63,7 +65,7 @@ const App = () => {
                         </Content>
                       
                     </Layout>
-                    <Footer>footer</Footer>
+                    <Footer  style={{ height: '15vh' }}>With love</Footer>
                 </Layout>
 
             </Router>
