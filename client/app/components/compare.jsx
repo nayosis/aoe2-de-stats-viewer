@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col, Card, Typography, Progress } from 'antd'
+import { Row, Col,  Typography} from 'antd'
 import { Link } from 'react-router-dom'
 
 const { Title } = Typography;
