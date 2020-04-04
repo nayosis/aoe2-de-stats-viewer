@@ -4,6 +4,10 @@
         "label": "Infantry"
     },
     {
+        "class": 5,
+        "label": "War Elephant"
+    },
+    {
         "class": 8,
         "label": "Cavalry"
     },
@@ -12,8 +16,16 @@
         "label": "All Building (except Dock)"
     },
     {
+        "class": 13,
+        "label": "stone Defense"
+    },
+    {
         "class": 15,
         "label": "Archer"
+    },
+    {
+        "class": 16,
+        "label": "Ship & Camel & Saboteur"
     },
     {
         "class": 17,
@@ -38,10 +50,13 @@
     {
         "class": 28,
         "label": "CavalyArcher"
-    }
-    ,
+    },
     {
         "class": 29,
         "label": "Eagle Warrior"
+    },
+    {
+        "class": 30,
+        "label": "HD CAMEL"
     }
 ]

@@ -10,11 +10,13 @@ import { Layout, Menu } from 'antd';
 import ListUnitWrapper from "./pages/listUnitWrapper";
 
 import UnitWrapper from "./pages/unitWrapper"
+import CategorieWrapper from "./pages/categorieWrapper";
+import ListCategoryWrapper from "./pages/listCategoryWrapper";
 
 
 
 
-const { Header, Footer,  Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 function Home() {
     return <h2>Home</h2>;
@@ -36,10 +38,10 @@ const App = () => {
                 <Layout>
                     <Header  >
                         <div className="logo" />
-                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                            <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
+                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+                            
                             <Menu.Item key="2"><Link to="/units">units</Link></Menu.Item>
-                            <Menu.Item key="3"><Link to="/users">Users</Link></Menu.Item>
+                            <Menu.Item key="3"><Link to="/categories">categories</Link></Menu.Item>
                         </Menu>
                     </Header>
                     <Layout>
@@ -47,8 +49,11 @@ const App = () => {
                         <Content style={{ height: '75vh' }}>
 
                             <Switch>
-                                <Route path="/about">
-                                    <About />
+                                <Route path="/categories/:idCategory">
+                                    <CategorieWrapper />
+                                </Route>
+                                <Route path="/categories">
+                                    <ListCategoryWrapper />
                                 </Route>
                                 <Route path="/units/:idUnit">
                                     <UnitWrapper />
@@ -63,9 +68,9 @@ const App = () => {
 
 
                         </Content>
-                      
+
                     </Layout>
-                    <Footer  style={{ height: '15vh' }}>With love</Footer>
+                   
                 </Layout>
 
             </Router>

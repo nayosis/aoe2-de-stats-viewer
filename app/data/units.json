@@ -3,11 +3,11 @@
         "id": 41,
         "name": "Huskarl",
         "stats": {
-            "life" : 60,
-            "speed":1.05,
-            "lineSigth":3,
-            "minRange":0,
-            "maxRange":0,
+            "life": 60,
+            "speed": 1.05,
+            "lineSigth": 3,
+            "minRange": 0,
+            "maxRange": 0,
             "attack": {
                 "type": "melee",
                 "amount": 10
@@ -22,7 +22,6 @@
                     "amount": 6
                 }
             ]
-               
         },
         "categories": [
             1,
@@ -47,11 +46,11 @@
         "id": 5,
         "name": "Hand Cannoneer",
         "stats": {
-            "life" : 35,
-            "speed":0.96,
-            "lineSigth":9,
-            "minRange":0,
-            "maxRange":7,
+            "life": 35,
+            "speed": 0.96,
+            "lineSigth": 9,
+            "minRange": 0,
+            "maxRange": 7,
             "attack": {
                 "type": "pierce",
                 "amount": 17
@@ -66,7 +65,6 @@
                     "amount": 6
                 }
             ]
-               
         },
         "categories": [
             15,
@@ -90,17 +88,16 @@
                 "category": 17
             }
         ]
-    }
-    ,
+    },
     {
         "id": 763,
         "name": "Plumed Archer",
         "stats": {
-            "life" : 50,
-            "speed":1.2,
-            "lineSigth":6,
-            "minRange":0,
-            "maxRange":4,
+            "life": 50,
+            "speed": 1.2,
+            "lineSigth": 6,
+            "minRange": 0,
+            "maxRange": 4,
             "attack": {
                 "type": "pierce",
                 "amount": 5
@@ -115,7 +112,6 @@
                     "amount": 1
                 }
             ]
-               
         },
         "categories": [
             15,
@@ -144,11 +140,11 @@
         "id": 25,
         "name": "Teutonic Knight",
         "stats": {
-            "life" : 80,
-            "speed":0.7,
-            "lineSigth":3,
-            "minRange":0,
-            "maxRange":0,
+            "life": 80,
+            "speed": 0.7,
+            "lineSigth": 3,
+            "minRange": 0,
+            "maxRange": 0,
             "attack": {
                 "type": "melee",
                 "amount": 12
@@ -163,7 +159,6 @@
                     "amount": 3
                 }
             ]
-               
         },
         "categories": [
             1,
@@ -184,11 +179,11 @@
         "id": 569,
         "name": "Paladin",
         "stats": {
-            "life" : 160,
-            "speed":1.35,
-            "lineSigth":5,
-            "minRange":0,
-            "maxRange":0,
+            "life": 160,
+            "speed": 1.35,
+            "lineSigth": 5,
+            "minRange": 0,
+            "maxRange": 0,
             "attack": {
                 "type": "melee",
                 "amount": 14
@@ -203,7 +198,6 @@
                     "amount": 3
                 }
             ]
-               
         },
         "categories": [
             8
@@ -216,6 +210,144 @@
             {
                 "amount": 0,
                 "category": 11
+            },
+            {
+                "amount": 0,
+                "category": 21
+            }
+        ]
+    },
+    {
+        "id": 358,
+        "name": "Pikeman",
+        "stats": {
+            "life": 55,
+            "speed": 1,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 4
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            27,
+            1
+        ],
+        "bonus": [
+            {
+                "amount": 25,
+                "category": 5
+            },
+            {
+                "amount": 22,
+                "category": 8
+            },
+            {
+                "amount": 16,
+                "category": 16
+            },
+            {
+                "amount": 18,
+                "category": 30
+            }
+        ]
+    },
+    {
+        "id": 359,
+        "name": "Halberdier",
+        "stats": {
+            "life": 60,
+            "speed": 1,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 6
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            27,
+            1
+        ],
+        "bonus": [
+            {
+                "amount": 28,
+                "category": 5
+            },
+            {
+                "amount": 32,
+                "category": 8
+            },
+            {
+                "amount": 17,
+                "category": 16
+            },
+            {
+                "amount": 26,
+                "category": 30
+            }
+        ]
+    },
+    {
+        "id": 239,
+        "name": "War Elephant",
+        "stats": {
+            "life": 450,
+            "speed": 0.6,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 15
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 1
+                },
+                {
+                    "type": "pierce",
+                    "amount": 2
+                }
+            ]
+        },
+        "categories": [
+            5,
+            8,
+            19
+        ],
+        "bonus": [
+            {
+                "amount": 7,
+                "category": 11
+            },
+            {
+                "amount": 7,
+                "category": 13
             },
             {
                 "amount": 0,

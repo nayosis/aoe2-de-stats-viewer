@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Tag } from 'antd';
+import { Table, Tag, Card } from 'antd';
 import {
     Link
 } from "react-router-dom";
@@ -19,7 +19,7 @@ const ListUnitWrapper = () => {
 
 
     return (
-
+        <Card >
         <Table dataSource={unitsData}>
 
         <Column title="name" dataIndex="name" key="name" 
@@ -81,7 +81,7 @@ const ListUnitWrapper = () => {
               />
       </Table>
 
-
+      </Card>
     )
     
 }

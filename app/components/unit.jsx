@@ -1,7 +1,6 @@
 import React from 'react'
 
 
-import { useHistory } from 'react-router-dom'
 import {Card,  Descriptions, PageHeader, Typography } from 'antd'
 import Attack from './attack'
 import Defense from './defense'
@@ -11,14 +10,10 @@ const { Title } = Typography;
 
 
 const Unit = ({ unit }) => {
- let history = useHistory()
+
     return (
         <React.Fragment>
-            <PageHeader
-                onBack={() => history.push("/units")}
-                title={unit.name}
-                subTitle="information "
-            />
+         
              <Title level={4}>Statistiques générales</Title>
              <Card >
             <Descriptions >
