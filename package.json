@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "cd client && yarn build",
     "start": "node ./api/bin/www"
   },
   "dependencies": {
