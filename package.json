@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cd client && yarn build",
     "startDev": "node ./api/bin/www",
-    "start": "cd client && yarn build && node ./api/bin/www"
+    "start": "node ./api/bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
