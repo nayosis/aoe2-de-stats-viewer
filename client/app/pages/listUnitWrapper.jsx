@@ -37,8 +37,8 @@ const ListUnitWrapper = () => {
 
       {unitsData.map( unit => {
         return (
-          <Col xs={24} sm={18} md={12} lg={8} xl={6}>
-            <UnitResume key= {unit.id} unit={unit} />
+          <Col key= {unit.id} xs={24} sm={18} md={12} lg={8} xl={6}>
+            <UnitResume  unit={unit} />
             </Col>
         )
       }

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 const getCategory = (id) => {
     const theCate = categoryData.find(cat => cat.class === id)
-    console.log(theCate)
     let title
     if (theCate === undefined) {
         title = "None"

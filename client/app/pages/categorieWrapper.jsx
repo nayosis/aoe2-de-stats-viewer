@@ -16,8 +16,6 @@ const CategorieWrapper = () => {
     let { idCategory } = useParams();
     const category = getCategorieById(idCategory)
 
-    console.log("para",para)
-    console.log("location",location)
     return (
         <React.Fragment>
             <FilAriane />

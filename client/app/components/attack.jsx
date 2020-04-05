@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Tag } from 'antd';
+import { Card, Statistic } from 'antd';
 
 import { GiBroadsword , GiArrowhead, GiArrowsShield, GiCheckedShield} from "react-icons/gi";
 
@@ -30,14 +30,41 @@ const getColor = ({type}) => {
           return ""
       } 
 }
+const getTitle = ({type}) => {
+    switch(type) {
+        case "melee":
+            return "Damage Melee"
+         
+        case "pierce":
+            return "Damage Pierce"
+        
+        default:
+          return ""
+      } 
+}
 
 const Attack = ({attack}) => {
 
     return (
-        <Tag icon={getIconType(attack)} color={getColor(attack)}>
-         -> {attack.amount}
-      </Tag>
+    <Card style={{height: "100%"}}>
+            <Statistic
+                title={getTitle(attack)}
+                value={attack.amount}
+                precision={0}
+                valueStyle={{ color: getColor(attack) }}
+                prefix={getIconType(attack)}
+            />
+            </Card>
+
+       
     )
 }
 
 export default Attack
+
+
+/*
+ <Tag icon={getIconType(attack)} color={getColor(attack)}>
+         -> {attack.amount}
+      </Tag>
+      */

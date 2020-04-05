@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col,  Typography} from 'antd'
+import { Row,Alert,  Col,  Typography, Card, Divider} from 'antd'
 import { Link } from 'react-router-dom'
 
 const { Title } = Typography;
@@ -39,21 +39,27 @@ const Compare = ({ unitLeft, unitRigth }) => {
     const rightRapport = (rightAttack * 100) / (rightAttack + leftAttack)
     const leftRapport = (leftAttack * 100) / (rightAttack + leftAttack)
     return (
+        <Card>
+            <Divider> <Title level={4}>{unitLeft.name} <GiCrossedAxes/> <Link to={"/units/" + unitRigth.id}>{unitRigth.name}</Link></Title></Divider>
         <Row   >
             <Col span={24} >
-                <Title level={4}>{unitLeft.name} <GiCrossedAxes/> <Link to={"/units/" + unitRigth.id}>{unitRigth.name}</Link></Title>
-                ({unitLeft.name} need {leftHit} Hit(s) for Kill {unitRigth.name}  ) - ({unitRigth.name} need {rightHit} Hit(s) for Kill  {unitLeft.name}  ) 
+            <Alert
+      message="1 vs 1"
+      description={`${unitLeft.name} need ${leftHit} Hit(s) for Kill ${unitRigth.name}  ) - (${unitRigth.name} need ${rightHit} Hit(s) for Kill ${unitLeft.name}  `} 
+      type="info"
+    /> 
+                
             </Col>
             <Col span={24}>
                 <Row align="middle" style={{ border: '1px solid black' }}>
                     <Col flex={leftRapport} style={{ backgroundColor: '#8fc72e' }} >
 
-                        <Row align="middle" justify="begin" style={{ minHeight: '90px' }} >
+                        <Row align="middle" justify="begin" style={{ minHeight: '50px' }} >
                             <Col> <Title level={4}> {leftAttack}  </Title> </Col>
                         </Row>
                     </Col>
                     <Col flex={rightRapport} style={{ backgroundColor: '#99ccff' }} >
-                        <Row align="middle" justify="end" style={{ minHeight: '90px' }}  >
+                        <Row align="middle" justify="end" style={{ minHeight: '50px' }}  >
                             <Col> <Title level={4}>  {rightAttack}  </Title></Col>
                         </Row>
                     </Col>
@@ -61,7 +67,7 @@ const Compare = ({ unitLeft, unitRigth }) => {
             </Col>
           
         </Row>
-       
+        </Card>
     )
 
 }

@@ -11,6 +11,7 @@ import { Layout, Menu, Card } from 'antd';
 import ListUnitWrapper from "./pages/listUnitWrapper";
 
 import UnitWrapper from "./pages/unitWrapper"
+import HomeWrapper from "./pages/homeWrapper"
 import CategorieWrapper from "./pages/categorieWrapper";
 import ListCategoryWrapper from "./pages/listCategoryWrapper";
 
@@ -19,18 +20,7 @@ import ListCategoryWrapper from "./pages/listCategoryWrapper";
 
 const { Header, Footer, Content } = Layout;
 
-function Home() {
-    return ( <Card>
-        <h2>Bienvenue sur "Age Of Empire DEfitive Edition statistic viewer"</h2>
-        <p> Ce projet est en cours de développement ! </p>
 
-        <p> commencer ici :</p>
-        <Link to="/units">units</Link>
-
-        
-    </Card>)
-        ;
-}
 
 
 const App = () => {
@@ -43,9 +33,9 @@ const App = () => {
                     <Header  >
                         <div className="logo" />
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-
-                            <Menu.Item key="2"><Link to="/units">units</Link></Menu.Item>
-                            <Menu.Item key="3"><Link to="/categories">categories</Link></Menu.Item>
+                        <Menu.Item key="1"><Link to="/">HOME</Link></Menu.Item>
+                            <Menu.Item key="units"><Link to="/units">UNITS</Link></Menu.Item>
+                            <Menu.Item key="categories"><Link to="/categories">CATEGORIES</Link></Menu.Item>
                         </Menu>
                     </Header>
                     <Layout>
@@ -66,7 +56,7 @@ const App = () => {
                                     <ListUnitWrapper />
                                 </Route>
                                 <Route path="/">
-                                    <Home />
+                                    <HomeWrapper />
                                 </Route>
                             </Switch>
 
