@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Divider, Button } from 'antd';
+import { Card, Divider, Button, Avatar } from 'antd';
 import Attack from './attack';
 import Defense from './defense';
 import Category from './category';
@@ -13,8 +13,11 @@ const { Meta } = Card;
 const UnitResume = ({ unit }) => {
 
     return (
-        <Card title={unit.name} >
-
+        <Card style={{height: "100%"}} >
+            <Meta
+                avatar={<Avatar src={"https://api.adorable.io/avatars/100/"+unit.name} />}
+                title={unit.name}
+                />
 
             <Divider>STAT</Divider>
             <Attack attack={unit.stats.attack} />
