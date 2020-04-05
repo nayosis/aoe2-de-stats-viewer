@@ -1,7 +1,8 @@
 import React from "react";
-import { Table, Card, Row, Col } from 'antd';
+import { Table, Card, Row, Col, PageHeader } from 'antd';
 import {
-  Link
+  Link,
+  useHistory
 } from "react-router-dom";
 
 import Attack from "../components/attack";
@@ -10,15 +11,27 @@ import Category from "../components/category";
 import BonusAttack from "../components/bonusAttack";
 import { getAllUnits } from "../services/unitService";
 import UnitResume from "../components/unitResume";
+import FilAriane from '../components/filAriane';
 const { Column, ColumnGroup } = Table;
 
 
 const ListUnitWrapper = () => {
 
+  const history = useHistory()
   const unitsData = getAllUnits()
 
   return (
+    <React.Fragment>
+           
     <Card >
+       <FilAriane />
+
+       <PageHeader
+                onBack={() => history.push("/")}
+                title="Liste des unités"
+                subTitle="information "
+            />
+
       <Row gutter={[16, 24]}>
     
 
@@ -34,6 +47,8 @@ const ListUnitWrapper = () => {
 
     </Row>
     </Card>
+    </React.Fragment>
+
   )
 
 }

@@ -12,7 +12,7 @@ const CompareAll = ({ idUnit }) => {
     return (
         <div>
             {allUnit.map(innerUnit => (
-                <Compare unitLeft={unit} unitRigth={innerUnit} />
+                <Compare key={unit.id+"vs"+innerUnit.id} unitLeft={unit} unitRigth={innerUnit} />
             ))}
         </div>
     )
