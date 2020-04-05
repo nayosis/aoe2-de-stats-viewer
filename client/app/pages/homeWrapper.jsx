@@ -1,6 +1,5 @@
 import React from 'react'
 import { Alert , Card, Progress, Row, Col } from 'antd'
-import FilAriane from '../components/filAriane'
 import { getAllUnits } from '../services/unitService'
 
 
@@ -9,7 +8,6 @@ const HomeWrapper = () => {
 
     return ( 
         <React.Fragment><Card>
-             <FilAriane />
         <h2>Bienvenue sur "Age Of Empire DEfitive Edition statistic viewer"</h2>
         <p> Ce projet est en cours de développement ! </p>
 

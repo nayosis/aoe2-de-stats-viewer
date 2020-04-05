@@ -5,13 +5,8 @@ import {
   useHistory
 } from "react-router-dom";
 
-import Attack from "../components/attack";
-import Defense from "../components/defense";
-import Category from "../components/category";
-import BonusAttack from "../components/bonusAttack";
 import { getAllUnits } from "../services/unitService";
 import UnitResume from "../components/unitResume";
-import FilAriane from '../components/filAriane';
 const { Column, ColumnGroup } = Table;
 
 
@@ -24,7 +19,6 @@ const ListUnitWrapper = () => {
     <React.Fragment>
            
     <Card >
-       <FilAriane />
 
        <PageHeader
                 onBack={() => history.push("/")}
