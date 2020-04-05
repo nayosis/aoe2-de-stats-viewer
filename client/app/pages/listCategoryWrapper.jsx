@@ -3,7 +3,6 @@ import React from 'react'
 
 import { getAllCaegories } from '../services/categoryService';
 import { List, Card } from 'antd';
-import FilAriane from '../components/filAriane';
 
 const ListCategoryWrapper = () => {
 
@@ -15,7 +14,6 @@ const ListCategoryWrapper = () => {
         <React.Fragment>
            
             <Card>
-                <FilAriane />
                 <List
                     bordered
                     dataSource={data}

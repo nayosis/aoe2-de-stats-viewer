@@ -6,7 +6,6 @@ import { Empty, Row, Col, PageHeader , Card } from 'antd'
 import {
     useParams
 } from "react-router-dom";
-import FilAriane from '../components/filAriane';
 import { getUnitById } from "../services/unitService.js"
 import Unit from "../components/unit.jsx";
 
@@ -32,7 +31,6 @@ const UnitWrapper = () => {
 
     return (
         <Card>
-             <FilAriane />
             <PageHeader
                 onBack={() => history.push("/units")}
                 title={unit.name}

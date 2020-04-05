@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import { getCategorieById } from '../services/categoryService';
 import { PageHeader } from 'antd';
-import FilAriane from '../components/filAriane';
 
 
 const CategorieWrapper = () => {
@@ -18,7 +17,6 @@ const CategorieWrapper = () => {
 
     return (
         <React.Fragment>
-            <FilAriane />
             <PageHeader
                 onBack={() => history.push("/categories")}
                 title={category.label}
