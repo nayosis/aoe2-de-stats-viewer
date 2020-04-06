@@ -1,46 +1,85 @@
-import React from "react";
-import { Table, Card, Row, Col, PageHeader } from 'antd';
+import React, { useState } from "react";
+import { Card, Row, Col, PageHeader, Select } from 'antd';
 import {
   Link,
   useHistory
 } from "react-router-dom";
-
+import { intersection } from 'lodash'
 import { getAllUnits } from "../services/unitService";
 import UnitResume from "../components/unitResume";
-const { Column, ColumnGroup } = Table;
+import { getAllCaegories } from "../services/categoryService";
+const { Option } = Select;
+
 
 
 const ListUnitWrapper = () => {
 
+
+  function handleChange(listCatFilter) {
+    console.log(listCatFilter.length)
+    if (listCatFilter.length !== 0) {
+      const tempo = unitsData.filter(unit => {
+        return (intersection(listCatFilter, unit.categories).length !== 0)
+      })
+      setFilteredUnit(tempo)
+    }
+    else {
+      setFilteredUnit(unitsData)
+    }
+
+  }
+
   const history = useHistory()
   const unitsData = getAllUnits()
+  const [filteredUnit, setFilteredUnit] = useState(unitsData)
 
+  const categories = getAllCaegories()
   return (
     <React.Fragment>
-           
-    <Card >
 
-       <PageHeader
-                onBack={() => history.push("/")}
-                title="Liste des unités"
-                subTitle="information "
-            />
+      <Card >
+        <PageHeader
+          onBack={() => history.push("/")}
+          title="Liste des unités"
+          subTitle="information "
+        />
 
-      <Row gutter={[16, 24]}>
-    
+        <Select
+          mode="multiple"
+          style={{ width: '100%' }}
+          placeholder="select Type Of Unit"
+          defaultValue={[]}
+          onChange={handleChange}
+          optionLabelProp="label"
+        >
+          {categories.map(cat => {
+            return (
+              <Option key={cat.class} value={cat.class} label={cat.label}>
+                {cat.label}
+              </Option>
+            )
+          })}
 
-      {unitsData.map( unit => {
-        return (
-          <Col key= {unit.id} xs={24} sm={18} md={12} lg={8} xl={6}>
-            <UnitResume  unit={unit} />
-            </Col>
-        )
-      }
-      ) 
-       }
 
-    </Row>
-    </Card>
+        </Select>
+        <Row gutter={[16, 24]}>
+          <Col span={24}>
+              Nombre d'unités : {filteredUnit.length}
+          </Col>
+        </Row>
+        <Row gutter={[16, 24]}>
+          {filteredUnit.map(unit => {
+            return (
+              <Col key={unit.id} xs={24} sm={18} md={12} lg={8} xl={6}>
+                <UnitResume unit={unit} />
+              </Col>
+            )
+          }
+          )
+          }
+
+        </Row>
+      </Card>
     </React.Fragment>
 
   )
