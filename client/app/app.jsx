@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import 'antd/dist/antd.css';
+//import 'antd/dist/antd.css';
+import 'antd/dist/antd.dark.css'
 import {
     BrowserRouter as Router,
     Switch,
