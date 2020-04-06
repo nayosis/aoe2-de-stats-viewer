@@ -3,7 +3,7 @@ import React from 'react'
 import { Card, Statistic } from 'antd';
 
 import { GiBroadsword , GiArrowhead, GiArrowsShield, GiCheckedShield} from "react-icons/gi";
-
+import { FormattedMessage } from "react-intl";
 
 const getIconType = ({type}) => {
     switch(type) {
@@ -33,10 +33,10 @@ const getColor = ({type}) => {
 const getTitle = ({type}) => {
     switch(type) {
         case "melee":
-            return "Damage Melee"
+            return <FormattedMessage id="unit.stat.attack.damageMelee"/>
          
         case "pierce":
-            return "Damage Pierce"
+            return <FormattedMessage id="unit.stat.attack.damagePierce"/>
         
         default:
           return ""

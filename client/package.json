@@ -16,9 +16,10 @@
   },
   "dependencies": {
     "antd": "^4.1.0",
-    "react": ">=16.9.0",
+    "react": "^16.3.0",
     "react-dom": ">=16.9.0",
     "react-icons": "^3.9.0",
+    "react-intl": "^4.3.1",
     "react-router-dom": "^5.1.2"
   }
 }

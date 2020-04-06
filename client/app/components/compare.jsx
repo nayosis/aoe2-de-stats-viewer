@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const { Title } = Typography;
 import { GiCrossedAxes } from "react-icons/gi";
-GiCrossedAxes
+
 const calculateDammage = (unit1, unit2) => {
     //unit2.categories
     var unit2Def = getDefenseAmount(unit2.stats.defense, unit1.stats.attack.type)

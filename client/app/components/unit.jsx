@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import { Card, Row, Col, Statistic, Typography } from 'antd'
+import { FormattedMessage } from "react-intl";
 import Attack from './attack'
 import Defense from './defense'
 import CompareAll from './compareAll'
@@ -14,7 +15,7 @@ const Unit = ({ unit }) => {
     return (
         <React.Fragment>
 
-            <Title level={4}>Statistiques générales</Title>
+            <Title level={4}><FormattedMessage id="unit.stat.label"/> </Title>
             <Card >
                 <Row gutter={[16, 24]}>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
@@ -29,44 +30,40 @@ const Unit = ({ unit }) => {
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
                         <Card style={{  }}>
                             <Statistic
-                                title="Hit Point"
+                                title={<FormattedMessage id="unit.stat.hitpoint"/>}
                                 value={unit.stats.life}
                                 precision={0}
                                 valueStyle={{ color: "#15DDAE" }}
-                            //prefix={getIconType(defense)}
                             />
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
                         <Card style={{  }}>
                             <Statistic
-                                title="speed"
+                                title={<FormattedMessage id="unit.stat.speed"/>}
                                 value={unit.stats.speed}
                                 precision={0}
-                                valueStyle={{ color: "#15DDAE" }}
-                            //prefix={getIconType(defense)}
+                                valueStyle={{ color: "#15AAAE" }}
                             />
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
                         <Card style={{  }}>
                             <Statistic
-                                title="line of Sigth"
+                                title={<FormattedMessage id="unit.stat.lineSigth"/>}
                                 value={unit.stats.lineSigth}
                                 precision={0}
-                                valueStyle={{ color: "#15DDAE" }}
-                            //prefix={getIconType(defense)}
+                                valueStyle={{ color: "#AADDAE" }}
                             />
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
                         <Card style={{  }}>
                             <Statistic
-                                title="range"
+                                title={<FormattedMessage id="unit.stat.range"/>}
                                 value={unit.stats.minRange + "-" + unit.stats.maxRange}
                                 precision={0}
-                                valueStyle={{ color: "#15DDAE" }}
-                            //prefix={getIconType(defense)}
+                                valueStyle={{ color: "#15DD74" }}
                             />
                         </Card>
                     </Col>
