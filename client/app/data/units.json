@@ -535,6 +535,103 @@
         ]
     },
     {
+        "id": 39,
+        "internalName": "CVRCH",
+        "name": "Cavalry Archer",
+        "stats": {
+            "life": 50,
+            "speed": 1.4,
+            "lineSigth": 5,
+            "minRange": 0,
+            "maxRange": 4,
+            "attack": {
+                "type": "melee",
+                "amount": 6
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 0
+                }
+            ]
+        },
+        "categories": [
+            8,
+            15,
+            28
+        ],
+        "bonus": [
+            {
+                "amount": 0,
+                "category": 3
+            },
+            {
+                "amount": 0,
+                "category": 17
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 2,
+                "category": 27
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "internalName": "CATAP",
+        "name": "Cataphract",
+        "stats": {
+            "life": 110,
+            "speed": 1.35,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "pierce",
+                "amount": 9
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 2
+                },
+                {
+                    "type": "pierce",
+                    "amount": 1
+                }
+            ]
+        },
+        "categories": [
+            8,
+            19
+        ],
+        "bonus": [
+            {
+                "amount": 9,
+                "category": 1
+            },
+            {
+                "amount": 0,
+                "category": 11
+            },
+            {
+                "amount": 0,
+                "category": 15
+            },
+            {
+                "amount": 0,
+                "category": 21
+            }
+        ]
+    },
+    {
         "id": 41,
         "internalName": "GBRSK",
         "name": "Huskarl",
@@ -575,6 +672,42 @@
             {
                 "amount": 2,
                 "category": 29
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "internalName": "TREBU",
+        "name": "Trebuchet",
+        "stats": {
+            "life": 150,
+            "speed": 0,
+            "lineSigth": 19,
+            "minRange": 4,
+            "maxRange": 16,
+            "attack": {
+                "type": "pierce",
+                "amount": 200
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 1
+                },
+                {
+                    "type": "pierce",
+                    "amount": 150
+                }
+            ]
+        },
+        "categories": [
+            17,
+            20
+        ],
+        "bonus": [
+            {
+                "amount": 250,
+                "category": 11
             }
         ]
     },
