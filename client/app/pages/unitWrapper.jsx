@@ -1,8 +1,8 @@
 import React from "react";
 
 import { useHistory } from 'react-router-dom'
-
-import { Empty, Row, Col, PageHeader , Card } from 'antd'
+import { FormattedMessage } from "react-intl";
+import { Row, Col, PageHeader, Card, Result, Button } from 'antd'
 import {
     useParams
 } from "react-router-dom";
@@ -18,14 +18,16 @@ const UnitWrapper = () => {
     if (!unit) {
         return (
             <Card>
-                <Empty
+                <Result
+                    status="error"
+                    title={<FormattedMessage id="unit.404" values={{ "idUnit": idUnit }} />}
+                    subTitle=""
                     style={{ height: '100vh' }}
-                    description={
-                        <span>
-                            no unit with id {idUnit}
-                        </span>
-                    }
+                    extra={[
+                        <Button key="buy" onClick={() => history.push("/")} ><FormattedMessage id="goHome" /></Button>,
+                    ]}
                 />
+
             </Card>)
     }
 
@@ -34,7 +36,7 @@ const UnitWrapper = () => {
             <PageHeader
                 onBack={() => history.push("/units")}
                 title={unit.name}
-                subTitle={"internalName:"+unit.internalName}
+                subTitle={"internalName:" + unit.internalName}
             />
             <Row justify="center" align="top" gutter={16} style={{ height: '100vh' }}>
                 <Col span={22}>
