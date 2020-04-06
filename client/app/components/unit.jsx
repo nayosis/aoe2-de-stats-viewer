@@ -27,7 +27,7 @@ const Unit = ({ unit }) => {
                         <Defense defense={unit.stats.defense[1]} />
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{ height: "100%" }}>
+                        <Card style={{  }}>
                             <Statistic
                                 title="Hit Point"
                                 value={unit.stats.life}
@@ -38,7 +38,7 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{ height: "100%" }}>
+                        <Card style={{  }}>
                             <Statistic
                                 title="speed"
                                 value={unit.stats.speed}
@@ -49,7 +49,7 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{ height: "100%" }}>
+                        <Card style={{  }}>
                             <Statistic
                                 title="line of Sigth"
                                 value={unit.stats.lineSigth}
@@ -60,7 +60,7 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{ height: "100%" }}>
+                        <Card style={{  }}>
                             <Statistic
                                 title="range"
                                 value={unit.stats.minRange + "-" + unit.stats.maxRange}

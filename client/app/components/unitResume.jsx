@@ -13,7 +13,7 @@ const { Meta } = Card;
 const UnitResume = ({ unit }) => {
 
     return (
-        <Card style={{ height: "100%" }} >
+        <Card style={{ }} >
             <Meta
                 avatar={<Avatar src={"https://api.adorable.io/avatars/100/" + unit.name} />}
                 title={unit.name}

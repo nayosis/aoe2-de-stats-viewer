@@ -46,7 +46,7 @@ const getTitle = ({type}) => {
 const Attack = ({attack}) => {
 
     return (
-    <Card style={{height: "100%"}}>
+    <Card style={{}}>
             <Statistic
                 title={getTitle(attack)}
                 value={attack.amount}
