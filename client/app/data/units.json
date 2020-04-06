@@ -1,6 +1,7 @@
 [
     {
         "id": 41,
+        "internalName" : "GBRSK",
         "name": "Huskarl",
         "stats": {
             "life": 60,
@@ -44,6 +45,7 @@
     },
     {
         "id": 5,
+        "internalName" : "HCANR",
         "name": "Hand Cannoneer",
         "stats": {
             "life": 35,
@@ -91,6 +93,7 @@
     },
     {
         "id": 763,
+        "internalName" : "PLUME",
         "name": "Plumed Archer",
         "stats": {
             "life": 50,
@@ -137,46 +140,8 @@
         ]
     },
     {
-        "id": 25,
-        "name": "Teutonic Knight",
-        "stats": {
-            "life": 80,
-            "speed": 0.7,
-            "lineSigth": 3,
-            "minRange": 0,
-            "maxRange": 0,
-            "attack": {
-                "type": "melee",
-                "amount": 12
-            },
-            "defense": [
-                {
-                    "type": "melee",
-                    "amount": 5
-                },
-                {
-                    "type": "pierce",
-                    "amount": 3
-                }
-            ]
-        },
-        "categories": [
-            1,
-            19
-        ],
-        "bonus": [
-            {
-                "amount": 4,
-                "category": 29
-            },
-            {
-                "amount": 4,
-                "category": 21
-            }
-        ]
-    },
-    {
         "id": 569,
+        "internalName" : "HEROC",
         "name": "Paladin",
         "stats": {
             "life": 160,
@@ -219,6 +184,7 @@
     },
     {
         "id": 358,
+        "internalName" : "ISPKM",
         "name": "Pikeman",
         "stats": {
             "life": 55,
@@ -266,6 +232,7 @@
     },
     {
         "id": 359,
+        "internalName" : "HLBDM",
         "name": "Halberdier",
         "stats": {
             "life": 60,
@@ -313,6 +280,7 @@
     },
     {
         "id": 239,
+        "internalName" : "MPCAV",
         "name": "War Elephant",
         "stats": {
             "life": 450,
@@ -354,10 +322,10 @@
                 "category": 21
             }
         ]
-    }
-    ,
+    },
     {
         "id": 4,
+        "internalName" : "ARCHR",
         "name": "Archer",
         "stats": {
             "life": 30,
@@ -384,7 +352,6 @@
             15
         ],
         "bonus": [
-            
             {
                 "amount": 0,
                 "category": 13
@@ -405,6 +372,7 @@
     },
     {
         "id": 6,
+        "internalName" : "HXBOW",
         "name": "Elite Skirmisher",
         "stats": {
             "life": 35,
@@ -431,7 +399,6 @@
             15
         ],
         "bonus": [
-            
             {
                 "amount": 4,
                 "category": 15
@@ -456,6 +423,7 @@
     },
     {
         "id": 7,
+        "internalName" : "XBOWM",
         "name": "Skirmisher",
         "stats": {
             "life": 30,
@@ -482,7 +450,6 @@
             15
         ],
         "bonus": [
-            
             {
                 "amount": 3,
                 "category": 15
@@ -500,10 +467,10 @@
                 "category": 27
             }
         ]
-    }
-    ,
+    },
     {
         "id": 8,
+        "internalName" : "LNGBW",
         "name": "Longbowman",
         "stats": {
             "life": 35,
@@ -544,10 +511,10 @@
                 "category": 27
             }
         ]
-    }
-    ,
+    },
     {
         "id": 11,
+        "internalName" : "MOSUN",
         "name": "Mangudai",
         "stats": {
             "life": 60,
@@ -594,11 +561,10 @@
                 "category": 27
             }
         ]
-    }
-    
-    ,
+    },
     {
         "id": 24,
+        "internalName" : "CARCH",
         "name": "Crossbowman",
         "stats": {
             "life": 35,
@@ -640,6 +606,210 @@
             {
                 "amount": 3,
                 "category": 27
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "internalName" : "TKNIT",
+        "name": "Teutonic Knight",
+        "stats": {
+            "life": 80,
+            "speed": 0.7,
+            "lineSigth": 3,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 12
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 5
+                },
+                {
+                    "type": "pierce",
+                    "amount": 3
+                }
+            ]
+        },
+        "categories": [
+            1,
+            19
+        ],
+        "bonus": [
+            {
+                "amount": 4,
+                "category": 29
+            },
+            {
+                "amount": 4,
+                "category": 21
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "internalName" : "BTRAM",
+        "name": "Battering Ram",
+        "stats": {
+            "life": 175,
+            "speed": 0.5,
+            "lineSigth": 3,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "pierce",
+                "amount": 2
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 180
+                }
+            ]
+        },
+        "categories": [
+            17,
+            20
+        ],
+        "bonus": [
+            {
+                "amount": 125,
+                "category": 11
+            },
+            {
+                "amount": 40,
+                "category": 20
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "internalName" : "BCANN",
+        "name": "Bombard Cannon",
+        "stats": {
+            "life": 80,
+            "speed": 0.7,
+            "lineSigth": 14,
+            "minRange": 5,
+            "maxRange": 12,
+            "attack": {
+                "type": "melee",
+                "amount": 40
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 2
+                },
+                {
+                    "type": "pierce",
+                    "amount": 5
+                }
+            ]
+        },
+        "categories": [
+            20,
+            23
+        ],
+        "bonus": [
+            {
+                "amount": 200,
+                "category": 11
+            },
+            {
+                "amount": 40,
+                "category": 13
+            },
+            {
+                "amount": 20,
+                "category": 16
+            },
+            {
+                "amount": 20,
+                "category": 20
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "internalName" : "LANCE",
+        "name": "Light Cavalry",
+        "stats": {
+            "life": 110,
+            "speed": 1.4,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 7
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 1
+                }
+            ]
+        },
+        "categories": [
+            8
+        ],
+        "bonus": [
+        ]
+    }
+    ,
+    {
+        "id": 100,
+        "internalName" : "KNGHT",
+        "name": "Knight",
+        "stats": {
+            "life": 110,
+            "speed": 1.35,
+            "lineSigth": 4,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 10
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 2
+                },
+                {
+                    "type": "pierce",
+                    "amount": 2
+                }
+            ]
+        },
+        "categories": [
+            8
+        ],
+        "bonus": [
+            
+            {
+                "amount": 0,
+                "category": 11
+            },
+            {
+                "amount": 0,
+                "category": 15
+            },
+            {
+                "amount": 0,
+                "category": 21
             }
         ]
     }
