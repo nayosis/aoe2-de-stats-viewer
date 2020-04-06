@@ -47,6 +47,7 @@ const App = () => {
 
     const resetData = () => {
         localStorage.clear()
+        console.log ('mogoa')
         message.success(messages[locale]["option.resetalldata"],4);
     }
 
