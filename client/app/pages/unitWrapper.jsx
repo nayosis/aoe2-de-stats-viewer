@@ -34,7 +34,7 @@ const UnitWrapper = () => {
             <PageHeader
                 onBack={() => history.push("/units")}
                 title={unit.name}
-                subTitle="information "
+                subTitle={"internalName:"+unit.internalName}
             />
             <Row justify="center" align="top" gutter={16} style={{ height: '100vh' }}>
                 <Col span={22}>

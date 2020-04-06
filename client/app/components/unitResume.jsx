@@ -17,6 +17,7 @@ const UnitResume = ({ unit }) => {
             <Meta
                 avatar={<Avatar src={"https://api.adorable.io/avatars/100/" + unit.name} />}
                 title={unit.name}
+                description={"internalName:"+unit.internalName}
             />
 
             <Divider>STAT</Divider>
