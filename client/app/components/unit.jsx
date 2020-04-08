@@ -42,7 +42,7 @@ const Unit = ({ unit }) => {
                             <Statistic
                                 title={<FormattedMessage id="unit.stat.speed"/>}
                                 value={unit.stats.speed}
-                                precision={0}
+                                precision={2}
                                 valueStyle={{ color: "#15AAAE" }}
                             />
                         </Card>
