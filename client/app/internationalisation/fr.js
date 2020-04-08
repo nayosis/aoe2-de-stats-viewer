@@ -13,7 +13,7 @@ export const fr = {
       "goHome" : "Retour à l'accueil",
       "unit.stat.label" : "Caractéristiques Générales",
       "unit.stat.hitpoint" : "Points de vie",
-      "unit.stat.speed" : "Vitesse",
+      "unit.stat.speed" : "Vitesse de déplacement",
       "unit.stat.lineSigth" : "Ligne de mire",
       "unit.stat.range" : "Portée",
       "unit.stat.attack.damageMelee" : "Dommage Corps à corps",

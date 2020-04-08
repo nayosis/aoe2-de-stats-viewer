@@ -13,7 +13,7 @@ export const en = {
       "goHome" : "Back to home",
       "unit.stat.label" : "General characteristics",
       "unit.stat.hitpoint" : "Hit Points",
-      "unit.stat.speed" : "Speed",
+      "unit.stat.speed" : "Move speed",
       "unit.stat.lineSigth" : "Line of Sigth",
       "unit.stat.range" : "Range",
       "unit.stat.attack.damageMelee" : "Melee Dammage",
