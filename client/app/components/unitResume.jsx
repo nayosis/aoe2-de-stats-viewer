@@ -22,16 +22,16 @@ const UnitResume = ({ unit }) => {
 
             <Divider>STAT</Divider>
             <Row gutter={[8, 16]}>
-                <Col xs={24} sm={8} md={8} lg={8} xl={8}>
+                <Col xs={24} sm={12} md={12} lg={24} xl={12}>
                     <Attack attack={unit.stats.attack} />
                 </Col>
-                <Col xs={24} sm={8} md={8} lg={8} xl={8}>
+                <Col xs={24} sm={12} md={12} lg={24} xl={12}>
                     {unit.stats.defense.filter(def => def.type === "melee")
                         .map(def => {
                             return (<Defense key={"melee" + unit.id} defense={def} />)
                         })}
                 </Col>
-                <Col xs={24} sm={8} md={8} lg={8} xl={8}>
+                <Col xs={24} sm={12} md={12} lg={24} xl={12}>
                     {unit.stats.defense.filter(def => def.type === "pierce")
                         .map(def => {
                             return (<Defense key={"pierce" + unit.id} defense={def} />)
