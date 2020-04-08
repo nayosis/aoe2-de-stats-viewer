@@ -3,6 +3,8 @@ import React from "react";
 import { useHistory } from 'react-router-dom'
 import { FormattedMessage } from "react-intl";
 import { Row, Col, PageHeader, Card, Result, Button } from 'antd'
+import { Helmet } from 'react-helmet'
+
 import {
     useParams
 } from "react-router-dom";
@@ -12,12 +14,16 @@ import Unit from "../components/unit.jsx";
 const UnitWrapper = () => {
     let history = useHistory()
 
+    
     let { idUnit } = useParams();
     const unit = getUnitById(idUnit)
 
     if (!unit) {
         return (
             <Card>
+                              <Helmet>
+          <title>"404"</title>
+        </Helmet>
                 <Result
                     status="error"
                     title={<FormattedMessage id="unit.404" values={{ "idUnit": idUnit }} />}
@@ -33,6 +39,9 @@ const UnitWrapper = () => {
 
     return (
         <Card>
+              <Helmet>
+          <title>{ unit.name }</title>
+        </Helmet>
             <PageHeader
                 onBack={() => history.push("/units")}
                 title={unit.name}

@@ -4,6 +4,8 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
+import { Helmet } from 'react-helmet'
+
 import { intersection } from 'lodash'
 import { getAllUnits } from "../services/unitService";
 import UnitResume from "../components/unitResume";
@@ -37,6 +39,9 @@ const ListUnitWrapper = () => {
   return (
     <React.Fragment>
 
+    <Helmet>
+    <title> Liste des unités </title>
+    </Helmet>
       <Card >
         <PageHeader
           onBack={() => history.push("/")}
