@@ -6,6 +6,8 @@ import { FormattedMessage } from "react-intl";
 import Attack from './attack'
 import Defense from './defense'
 import CompareAll from './compareAll'
+import Category from './category';
+import ListBonusAttack from './listBonusAttack';
 
 const { Title } = Typography;
 
@@ -15,7 +17,7 @@ const Unit = ({ unit }) => {
     return (
         <React.Fragment>
 
-            <Title level={4}><FormattedMessage id="unit.stat.label"/> </Title>
+            <Title level={4}><FormattedMessage id="unit.stat.label" /> </Title>
             <Card >
                 <Row gutter={[16, 24]}>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
@@ -28,9 +30,9 @@ const Unit = ({ unit }) => {
                         <Defense defense={unit.stats.defense[1]} />
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{  }}>
+                        <Card style={{}}>
                             <Statistic
-                                title={<FormattedMessage id="unit.stat.hitpoint"/>}
+                                title={<FormattedMessage id="unit.stat.hitpoint" />}
                                 value={unit.stats.life}
                                 precision={0}
                                 valueStyle={{ color: "#15DDAE" }}
@@ -38,9 +40,9 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{  }}>
+                        <Card style={{}}>
                             <Statistic
-                                title={<FormattedMessage id="unit.stat.speed"/>}
+                                title={<FormattedMessage id="unit.stat.speed" />}
                                 value={unit.stats.speed}
                                 precision={2}
                                 valueStyle={{ color: "#15AAAE" }}
@@ -48,9 +50,9 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{  }}>
+                        <Card style={{}}>
                             <Statistic
-                                title={<FormattedMessage id="unit.stat.lineSigth"/>}
+                                title={<FormattedMessage id="unit.stat.lineSigth" />}
                                 value={unit.stats.lineSigth}
                                 precision={0}
                                 valueStyle={{ color: "#AADDAE" }}
@@ -58,17 +60,29 @@ const Unit = ({ unit }) => {
                         </Card>
                     </Col>
                     <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                        <Card style={{  }}>
+                        <Card style={{}}>
                             <Statistic
-                                title={<FormattedMessage id="unit.stat.range"/>}
+                                title={<FormattedMessage id="unit.stat.range" />}
                                 value={unit.stats.minRange + "-" + unit.stats.maxRange}
                                 precision={0}
                                 valueStyle={{ color: "#15DD74" }}
                             />
                         </Card>
                     </Col>
-                </Row>
 
+
+                </Row>
+                <Row gutter={[16, 24]}>
+                    {unit.categories.map(category => {
+                        return (
+                            <Category key={category} id={category} />
+                        );
+                    })}
+
+                </Row>
+                <Row gutter={[16, 24]}>
+                    <ListBonusAttack bonus={unit.bonus} />
+                </Row>
 
 
 
