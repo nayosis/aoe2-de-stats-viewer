@@ -894,6 +894,59 @@
             }
         ]
     },
+    
+    {
+        "id": 753,
+        "internalName": "EAGLEH",
+        "name": "Eagle Warrior",
+        "stats": {
+            "life": 55,
+            "speed": 1.15,
+            "lineSigth": 6,
+            "minRange": 0,
+            "maxRange": 0,
+            "attack": {
+                "type": "melee",
+                "amount": 7
+            },
+            "defense": [
+                {
+                    "type": "melee",
+                    "amount": 0
+                },
+                {
+                    "type": "pierce",
+                    "amount": 3
+                }
+            ]
+        },
+        "categories": [
+            1,
+            29
+        ],
+        "bonus": [
+            {
+                "amount": 3,
+                "category": 8
+            },
+            {
+                "amount": 1,
+                "category": 16
+            },
+            {
+                "amount": 3,
+                "category": 20
+            },
+            {
+                "amount": 0,
+                "category": 21
+            },
+            {
+                "amount": 2,
+                "category": 30
+            }
+        ]
+    },
     {
         "id": 763,
         "internalName": "PLUME",
