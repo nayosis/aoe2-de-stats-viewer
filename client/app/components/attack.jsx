@@ -2,16 +2,16 @@ import React from 'react'
 
 import { Card, Statistic } from 'antd';
 
-import { GiBroadsword , GiArrowhead, GiArrowsShield, GiCheckedShield} from "react-icons/gi";
+//import { GiBroadsword , GiArrowhead, GiArrowsShield, GiCheckedShield} from "react-icons/gi";
 import { FormattedMessage } from "react-intl";
 
 const getIconType = ({type}) => {
     switch(type) {
         case "melee":
-            return <GiBroadsword />
+            return ""//<GiBroadsword />
          
         case "pierce":
-            return <GiArrowhead />
+            return ""//<GiArrowhead />
         
         default:
           return ""

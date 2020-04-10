@@ -4,7 +4,7 @@ import { Row,Alert,  Col,  Typography, Card, Divider} from 'antd'
 import { Link } from 'react-router-dom'
 
 const { Title } = Typography;
-import { GiCrossedAxes } from "react-icons/gi";
+//import { GiCrossedAxes } from "react-icons/gi";
 
 const calculateDammage = (unit1, unit2) => {
     //unit2.categories
@@ -40,7 +40,7 @@ const Compare = ({ unitLeft, unitRigth }) => {
     const leftRapport = (leftAttack * 100) / (rightAttack + leftAttack)
     return (
         <Card>
-            <Divider> <Title level={4}>{unitLeft.name} <GiCrossedAxes/> <Link to={"/units/" + unitRigth.id}>{unitRigth.name}</Link></Title></Divider>
+            <Divider> <Title level={4}>{unitLeft.name} VS <Link to={"/units/" + unitRigth.id}>{unitRigth.name}</Link></Title></Divider>
         <Row   >
             <Col span={24} >
             <Alert
